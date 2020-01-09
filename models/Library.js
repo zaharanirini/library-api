@@ -7,13 +7,13 @@ var Schema = mongoose.Schema;
  *                  - pengarangBuku, dengan tipe String
  *                  - genreBuku, dengan tipe String
  *                  - isDipinjam, dengan tipe Boolean
-*/  
+*/
 const librarySchema = new Schema({
   // isi disini
 });
 
 
-// Buat model mongoose dengan menggunakan skema yang didefinisikan sebelumnya
+// TODO: Buat model mongoose dengan menggunakan skema yang didefinisikan sebelumnya
 const Library = //isi disini
 
-module.exports = Library;
+  module.exports = Library;

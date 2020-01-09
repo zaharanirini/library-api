@@ -13,12 +13,12 @@ const routes = require('./routes/Routes');
 
 const app = express();
 
-//  Tambahkan variabel DB yang berasal dari file /config/Config
-mongoose.connect(/* DB */ config.DB, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false
-});
+//  TODO: Tambahkan variabel DB yang berasal dari file /config/Config
+// mongoose.connect([tambah disini], {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   useFindAndModify: false
+// });
 
 app.use(cors());  //enable cors
 
@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Tambahkan definisi path untuk API agar API dapat diakses dengan 
+// TODO: Tambahkan definisi path untuk API agar API dapat diakses dengan 
 // path `/library`
 // app.use([tambah disini], routes);
 
@@ -46,7 +46,7 @@ app.use((err, req, res) => {
 });
 
 //  Tambahkan variabel APP_PORT yang berasal dari file /config/Config
-app.listen(/* APP_PORT */ );
+app.listen(/* APP_PORT */);
 
 
 module.exports = app;
