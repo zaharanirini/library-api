@@ -32,7 +32,7 @@ app.put('/:id', (req, res) => {
   // isi disini
 });
 
-// Memanggil fungsi rubahStatusPeminjaman untuk merubah status peminjaman buku tertentu
+// Memanggil fungsi rubahInfoBuku untuk merubah info peminjaman buku tertentu
 app.put('/rubah/:id', (req, res) => {
   const { id } = req.params;
   repo.rubahInfoBuku(id, req.body)
