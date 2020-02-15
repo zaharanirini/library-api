@@ -7,5 +7,5 @@ module.exports = {
 
   // APP_PORT sebagai PORT untuk menjalankan project express dengan environment variable `HOST`
   //          jika environment variable tidak tersedia, maka nilai APP_PORT menjadi 80
-  APP_PORT: process.env.APP_PORT?process.env.APP_PORT:80,
+  APP_PORT: process.env.PORT?process.env.PORT:80,
 };
