@@ -41,7 +41,7 @@ app.delete('/:id', (req, res) => {
   }).catch((error)=>console.log(error))
 });
 
-// TODO: Memanggil fungsi rubahStatusPeminjaman untuk merubah status peminjaman buku tertentu
+// TODO: Memanggil fungsi rubahInfoBuku untuk merubah status peminjaman buku tertentu
 app.put('/:id', (req, res) => {
   const { id } = req.params;
   const infoBuku = {tambahBuku: req.body.tambahBuku, pengarangBuku: req.body.pengarangBuku, genreBuku: req.body.genreBuku, isDipinjam: req.body.isDipinjam};
@@ -50,7 +50,7 @@ app.put('/:id', (req, res) => {
   .catch((error)=>console.log(error));
 });
 
-// Memanggil fungsi rubahInfoBuku untuk merubah info peminjaman buku tertentu
+// Memanggil fungsi rubahStatusPeminjaman untuk merubah info peminjaman buku tertentu
 app.put('/rubah/:id', (req, res) => {
   const { id } = req.params;
   repo.rubahStatusPeminjaman(id, req.body)
