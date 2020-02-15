@@ -45,7 +45,7 @@ app.delete('/:id', (req, res) => {
 app.put('/:id', (req, res) => {
   const { id } = req.params;
   const infoBuku = {tambahBuku: req.body.tambahBuku, pengarangBuku: req.body.pengarangBuku, genreBuku: req.body.genreBuku, isDipinjam: req.body.isDipinjam};
-  repo.rubahInfoBuku(id, infoBukuBaru)
+  repo.rubahInfoBuku(id, infoBuku)
   .then(res.status(200).json([]))
   .catch((error)=>console.log(error));
 });
